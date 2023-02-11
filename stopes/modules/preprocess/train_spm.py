@@ -50,7 +50,7 @@ class Vocab:
                         # Those special tokens are added by fairseq
                         if word in ["<unk>", "<s>", "</s>"]:
                             continue
-                        print(word, 1, file=o)
+                        print(word, 1, "#fairseq:overwrite", file=o)
         return dict_file
 
 
